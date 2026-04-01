@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Yiyis <3</title>
+<title>Para Yiyis 🌸</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,7 +30,18 @@
     overflow-y: auto;
     font-family: 'Cormorant Garamond', serif;
     position: relative;
-    padding: 20px 10px;
+    padding: 40px 10px 60px;
+  }
+
+  .scene {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 420px;
   }
 
   /* Particles */
@@ -57,15 +68,7 @@
     100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
   }
 
-  /* Scene */
-  .scene {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
+  /* Scene - see below body styles */
 
   /* Message */
   .message {
@@ -107,15 +110,16 @@
   /* Bouquet Container */
   .bouquet {
     position: relative;
-    width: min(380px, 92vw);
-    height: min(480px, 65vh);
+    width: min(380px, 95vw);
+    height: auto;
     filter: drop-shadow(0 0 30px rgba(212,168,83,0.3));
   }
 
   /* SVG lilies */
   svg.bouquet-svg {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     overflow: visible;
   }
 
@@ -397,16 +401,15 @@
     <span class="vol-icon">🔊</span>
   </div>
   <div class="yt-note">
-    La música viene de YouTube
-  .necesitas conexión a internet para escucharla.
+    La música viene de YouTube 🎶 necesitas conexión a internet para escucharla.
   </div>
 </div>
 
 <!-- Main Scene -->
 <div class="scene">
   <div class="message">
-    <h1>Hola Yiyis, te quiero </h1>
-    <p class="sub">— para ti, con todo mi cansancio—</p>
+    <h1>Hola Yiyis, te quiero 🌸</h1>
+    <p class="sub">— para ti, con todo mi amor —</p>
   </div>
 
   <div class="bouquet">
@@ -545,4 +548,4 @@
       <!-- ====== LILY 3 — RIGHT (cream/warm) ====== -->
       <g class="lily-group" style="transform-origin: 230px 308px">
         <g transform="translate(230,298) rotate(12)" filter="url(#glow-soft)">
-          <ellipse cx="0" cy="-38" rx="12" ry="40" fill="url(#petal-warm)" transform="rotate(0)" opa
+          <ellipse cx="
