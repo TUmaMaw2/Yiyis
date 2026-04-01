@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Yiyis</title>
+    <style>
+        /* Configuración del fondo y estilo general */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Georgia', serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Estilo del mensaje arriba */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Contenedor del ramo */
+        .ramo-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* La imagen de los lirios */
+        .lirios {
+            width: 350px; /* Puedes ajustar el tamaño */
+            height: auto;
+            border-radius: 20px;
+            /* Efecto de brillo y resplandor */
+            filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.8)) brightness(1.1);
+            animation: glow 4s infinite alternate;
+        }
+
+        /* Animación suave de brillo */
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)) brightness(1.1);
+            }
+            to {
+                filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.9)) brightness(1.3);
+            }
+        }
+
+        /* Animación de aparición para el texto */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Decoración de partículas (estrellitas) */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <h1>Para Yiyis con todo mi cariño</h1>
+
+    <div class="ramo-container">
+        <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?q=80&w=1000&auto=format&fit=crop" 
+             alt="Ramo de Lirios" 
+             class="lirios">
+    </div>
+
+</body>
+</html>
